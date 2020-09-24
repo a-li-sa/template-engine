@@ -1,4 +1,3 @@
 node_modules
-README.md
-output/team.html
+/output/team.html
 .idea
