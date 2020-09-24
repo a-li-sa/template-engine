@@ -10,26 +10,43 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+function validateName(name) {
+  let reg = /^[a-zA-Z.,\s]*$/;
+  return reg.test(name) || "May only contain letters, spaces, periods, or commas";
+}
+function validateNumber(number)
+{
+  let reg = /^\d+$/;
+  return reg.test(number) || "Must be a number";
+}
+
 const questions = [
   {
     type: 'input',
     name: 'name',
-    message: 'What is your full name?'
+    message: "What is the employee's full name?",
+    validate: validateName
   },
   {
     type: 'input',
     name: 'id',
-    message: 'What is your ID number?'
+    message: "What is the employee's ID?",
+    validate: validateNumber
   },
   {
     type: 'input',
     name: 'email',
-    message: 'What is your email?'
+    message: "What is the employee's email?",
+    validate: function validateEmail(email)
+    {
+      let reg = /@/;
+      return reg.test(email) || "Must be a valid email";
+    }
   },
   {
     type: 'list',
     name: 'role',
-    message: 'What is your role?',
+    message: "What is the employee's role?",
     choices: ['Manager', 'Engineer', 'Intern']
   },
   // HINT: each employee type (manager, engineer, or intern) has slightly different
@@ -38,20 +55,26 @@ const questions = [
   {
     type: 'input',
     name: 'officeNumber',
-    message: 'What is your office number?',
-    when: (answers) => answers.role === 'Manager'
+    message: "What is the manager's office number?",
+    when: (answers) => answers.role === 'Manager',
+    validate: validateNumber
   },
   {
     type: 'input',
     name: 'school',
-    message: 'What school are you attending?',
-    when: (answers) => answers.role === 'Intern'
+    message: "What school is the intern attending?",
+    when: (answers) => answers.role === 'Intern',
+    validate: validateName
   },
   {
     type: 'input',
     name: 'github',
-    message: 'What is your GitHub username?',
-    when: (answers) => answers.role === 'Engineer'
+    message: "What is the engineer's GitHub username?",
+    when: (answers) => answers.role === 'Engineer',
+    validate: function validateGitHub(input)
+    {
+      return input !== '' || "Must enter GitHub username";
+    }
   }
 ]
 const employees = [];
