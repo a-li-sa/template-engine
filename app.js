@@ -12,7 +12,7 @@ const render = require("./lib/htmlRenderer");
 
 function validateName(name) {
   let reg = /^[a-zA-Z.,\s]*$/;
-  return reg.test(name) || "May only contain letters, spaces, periods, or commas";
+  return reg.test(name) && name !== '' || "Must contain letters, spaces, periods, or commas";
 }
 function validateNumber(number)
 {
@@ -40,7 +40,7 @@ const questions = [
     validate: function validateEmail(email)
     {
       let reg = /@/;
-      return reg.test(email) || "Must be a valid email";
+      return reg.test(email) && email !== '' || "Must be a valid email";
     }
   },
   {

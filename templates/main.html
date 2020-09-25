@@ -1,32 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Team</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c502137733.js"></script>
+    <title>Our Team</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" />
 </head>
-
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
-            </div>
-        </div>
+<h1 class="uk-text-lighter uk-text-warning uk-padding uk-heading-medium uk-heading-line uk-text-center"><span>Our Team</span></h1>
+<div class="uk-container uk-margin">
+    <div class="uk-child-width-1-3@m uk-grid-match uk-flex-center" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom; delay: 100">
+        {{ team }}
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
-                {{ team }}
-            </div>
-        </div>
-    </div>
+</div>
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
 </body>
-
 </html>

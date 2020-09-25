@@ -1,13 +1,22 @@
-<div class="card employee-card">
-    <div class="card-header">
-        <h2 class="card-title">{{ name }}</h2>
-        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h3>
-    </div>
-    <div class="card-body">
-        <ul class="list-group">
-            <li class="list-group-item">ID: {{ id }}</li>
-            <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
-            <li class="list-group-item">GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
-        </ul>
+<div>
+    <div class="uk-card uk-card-default">
+        <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                    <span class="uk-text-warning" uk-icon="icon: bolt; ratio:2"></span>
+                </div>
+                <div class="uk-width-expand">
+                    <h3 class="uk-card-title uk-margin-remove-bottom">{{ name }}</h3>
+                    <p class="uk-text-meta uk-margin-remove-top">{{ role }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-card-body">
+            <ul class="uk-list uk-list-square">
+                <li>ID: {{ id }}</li>
+                <li>Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                <li>GitHub: <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a></li>
+            </ul>
+        </div>
     </div>
 </div>
