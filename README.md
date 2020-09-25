@@ -52,8 +52,8 @@ After the user finishes inputting all the team members, the [team.html](output/t
 This [video](https://youtu.be/56PzSG-JFZQ) demonstrates application functionality and produced this [HTML file](output/team.html). Below is a screenshot of the responsive page.
 
 <p float="left">
-    <img src="https://i.imgur.com/o0F6jWv.png" alt="screenshot" height="400px">
-    <img src="https://i.imgur.com/h6sPbUL.png" alt="responsive" height="400px">
+    <img src="https://i.imgur.com/o0F6jWv.png" alt="screenshot" height="320px">
+    <img src="https://i.imgur.com/h6sPbUL.png" alt="responsive" height="320px">
 </p>
 
 ## Tests
