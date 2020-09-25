@@ -49,7 +49,7 @@ node app.js
 
 After the user finishes inputting all the team members, the [team.html](output/team.html) page gets generated in the `output` directory and displays a nicely formatted team roster. Each team member should display the following: name, role, ID, and role-specific property (school, link to GitHub profile, or office number).
 
-This [video](https://youtu.be/56PzSG-JFZQ) demonstrates application functionality and produced this [HTML file](output/team.html). Below is a screenshot of the [responsive page](https://a-li-sa.github.io/template-engine/output/team.html).
+This [video](https://youtu.be/HY_p4Vh0YWo) demonstrates application functionality and produced this [HTML file](output/team.html). Below is a screenshot of the [responsive page](https://a-li-sa.github.io/template-engine/output/team.html).
 
 <p float="left">
     <img src="https://i.imgur.com/o0F6jWv.png" alt="screenshot" height="320px">
