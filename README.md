@@ -45,8 +45,8 @@ node app.js
 ```
 This [video](https://youtu.be/56PzSG-JFZQ) demonstrates application functionality and produced this [HTML file](output/team.html). Below is a screenshot of the responsive page.
 
-<img src="https://i.imgur.com/BbKnL72.png" alt="screenshot" height="500px">
-<img src="https://i.imgur.com/h6sPbUL.png" alt="responsive" height="500px">
+<img src="https://i.imgur.com/BbKnL72.png" alt="screenshot" height="300px">
+<img src="https://i.imgur.com/h6sPbUL.png" alt="responsive" height="300px">
 
 ### Roster output
 
