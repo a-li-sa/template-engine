@@ -4,8 +4,9 @@
 
 Built with Node.js
 
-URL of the GitHub repository: https://github.com/a-li-sa/template-engine
-URL of sample team page created by the application: https://a-li-sa.github.io/template-engine/output/team.html
+* URL of the GitHub repository: https://github.com/a-li-sa/template-engine
+
+* URL of sample team page created by the application: https://a-li-sa.github.io/template-engine/output/team.html
 
 </div>
 
@@ -43,14 +44,15 @@ The user will be prompted for their name, email, id, and specific information ba
 ```
 node app.js
 ```
-This [video](https://youtu.be/56PzSG-JFZQ) demonstrates application functionality and produced this [HTML file](output/team.html). Below is a screenshot of the responsive page.
-
-<img src="https://i.imgur.com/BbKnL72.png" alt="screenshot" height="300px">
-<img src="https://i.imgur.com/h6sPbUL.png" alt="responsive" height="300px">
 
 ### Roster output
 
-After the user finishes inputting all the team members, the `team.html` page gets generated in the `output` directory and displays a nicely formatted team roster. Each team member should display the following: name, role, ID, and role-specific property (school, link to GitHub profile, or office number).
+After the user finishes inputting all the team members, the [team.html](output/team.html) page gets generated in the `output` directory and displays a nicely formatted team roster. Each team member should display the following: name, role, ID, and role-specific property (school, link to GitHub profile, or office number).
+
+This [video](https://youtu.be/56PzSG-JFZQ) demonstrates application functionality and produced this [HTML file](output/team.html). Below is a screenshot of the responsive page.
+
+<img src="https://i.imgur.com/o0F6jWv.png" alt="screenshot" height="300px">
+<img src="https://i.imgur.com/h6sPbUL.png" alt="responsive" height="300px">
 
 ## Tests
 
