@@ -5,6 +5,7 @@
 Built with Node.js
 
 URL of the GitHub repository: https://github.com/a-li-sa/template-engine
+URL of sample team page created by the application: https://a-li-sa.github.io/template-engine/output/team.html
 
 </div>
 
